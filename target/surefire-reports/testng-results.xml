@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="com.accenture.tests.RegisterUserTest" duration-ms="732" started-at="2017-06-12T22:33:07Z" finished-at="2017-06-12T22:33:08Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="732" started-at="2017-06-12T22:33:07Z" finished-at="2017-06-12T22:33:08Z">
+      <class name="com.accenture.tests.RegisterUserTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.accenture.tests.RegisterUserTest@5315b42e]" name="beforeTest" is-config="true" duration-ms="16" started-at="2017-06-12T17:33:07Z" finished-at="2017-06-12T17:33:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="registerUser()[pri:0, instance:com.accenture.tests.RegisterUserTest@5315b42e]" name="registerUser" duration-ms="695" started-at="2017-06-12T17:33:07Z" finished-at="2017-06-12T17:33:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUser -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.accenture.tests.RegisterUserTest@5315b42e]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-06-12T17:33:08Z" finished-at="2017-06-12T17:33:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.accenture.tests.RegisterUserTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.accenture.tests.RegisterUserTest -->
+</testng-results>

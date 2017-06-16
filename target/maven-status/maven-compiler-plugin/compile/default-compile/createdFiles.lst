@@ -1,0 +1,7 @@
+com\automationpractice\utils\Status.class
+com\automationpractice\common\ReadExcel.class
+com\automationpractice\pages\RegistrationPage.class
+com\automationpractice\pages\HomePage.class
+com\automationpractice\common\PageObject.class
+com\automationpractice\utils\Hobby.class
+com\automationpractice\pages\RegistrationPage$1.class
