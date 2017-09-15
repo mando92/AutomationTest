@@ -47,9 +47,9 @@ public class PageObject {
 	}
 	
 	
-	public WebElement getElement(By locator)
+	public WebElement getElement(By element)
 	{
-		return driver.findElement(locator);
+		return driver.findElement(element);
 		
 	}
 	

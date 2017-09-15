@@ -12,22 +12,19 @@ import com.automationpractice.common.Person;
 import com.automationpractice.common.TestDataHelper;
 import com.automationpractice.pages.HomePage;
 import com.automationpractice.pages.RegistrationPage;
+import com.automationpractice.common.BaseTest;
 
-public class RegisterUserTest {
+public class RegisterUserTest extends BaseTest{
 	
 	
-public static WebDriver driver;
 
 	@BeforeTest
 	public void beforeTest() {
-
-		System.setProperty("webdriver.chrome.driver",
-				"C:/Workspace/AutomationTest/srcDriver/chromedriver.exe");
-		driver = new ChromeDriver();
-
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("http://demoqa.com/");
+		BaseTest bt = new BaseTest();
+		bt.beforeTest();
+	 
 	}
+	
 	
 	@Test
 	public void registerUser() {
@@ -35,6 +32,7 @@ public static WebDriver driver;
 		TestDataHelper tdh = new TestDataHelper();
 		Person p = tdh.getDataFromExcel(2);
 
+		
 		HomePage homepage = new HomePage(driver);
 		homepage.clickOnRegistration();
 		

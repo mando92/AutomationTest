@@ -14,6 +14,8 @@ public class Person {
 	private String picProfile;
 	private String description;
 	private String password;
+	private String message;
+	private String subject;
 	
 	public String getFirstName() {
 		return firstName;
@@ -88,6 +90,19 @@ public class Person {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	public String getMessage() {
+		return message;
+	}
+	public void setMessage(String message) {
+		this.message = message;
+	}
 	
+	public String getSubject() {
+		return subject;
+	}
+	
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
 
 }

@@ -7,15 +7,20 @@ import com.automationpractice.common.PageObject;
 
 public class HomePage extends PageObject {
 	
-	By registrationbtn = By.id("menu-item-374");
+	By registrationBtn = By.id("menu-item-374");
+	By contactBtn = By.id("menu-item-64");
 
 	public HomePage(WebDriver driver) {
 		super(driver);
 	}
 	
-	public void clickOnRegistration()
-	{
-		clickButton(registrationbtn);
+	public void clickOnRegistration() {
+		clickButton(registrationBtn);
+	}
+	
+	public void clickOnContact() {
+		
+		clickButton(contactBtn);
 	}
 
 }

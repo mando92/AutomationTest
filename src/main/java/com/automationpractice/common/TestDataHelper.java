@@ -31,6 +31,38 @@ public class TestDataHelper {
 
 		return p;
 	}
+	
+	public Person getDataForMessage(int recordNumber) {
+		Person p = new Person();
+		try {
+			ReadExcel.setExcelFile("../AutomationTest/externalFile/RegistrationPractice.xlsx", 
+					"RegistrationLog");
+			
+			p.setFirstName(ReadExcel.getCellData(recordNumber, 0));
+			p.setLastName(ReadExcel.getCellData(recordNumber, 1));
+			p.setEmail(ReadExcel.getCellData(recordNumber, 8));
+			p.setMessage(ReadExcel.getCellData(recordNumber, 13));
+			p.setSubject(ReadExcel.getCellData(recordNumber, 14));
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return p;
+	}
+	
+	public TestResults setTestResults(String Result,int RowNum, int ColNum) {
+		TestResults tr = new TestResults();
+		try {
+			ReadExcel.setExcelFile("../AutomationTest/externalFile/RegistrationPractice.xlsx", 
+					"RegistrationLog");
+			ReadExcel.setCellData(Result, RowNum, ColNum, Result, Result);
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return tr;
+	}
 
 	public int[] splitDate(String dateOfBirth) {
 		

@@ -1,7 +1,11 @@
 com\automationpractice\utils\Status.class
 com\automationpractice\common\ReadExcel.class
+com\automationpractice\common\BaseTest.class
+com\automationpractice\common\TestDataHelper.class
 com\automationpractice\pages\RegistrationPage.class
 com\automationpractice\pages\HomePage.class
 com\automationpractice\common\PageObject.class
+com\automationpractice\common\Person.class
 com\automationpractice\utils\Hobby.class
 com\automationpractice\pages\RegistrationPage$1.class
+com\automationpractice\pages\ContactPage.class

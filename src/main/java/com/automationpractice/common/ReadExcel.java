@@ -6,6 +6,7 @@ import java.text.SimpleDateFormat;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DateUtil;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -65,13 +66,16 @@ public class ReadExcel {
 
 	}
 
-	public static void setCellData(String Result, int RowNum, int ColNum)
+	public static void setCellData(String Result, int RowNum, int ColNum, String Path, String SheetName)
 			throws Exception {
 
 		try {
-
-			row = excelWSheet.getRow(RowNum);
-			cell = row.getCell(ColNum, row.RETURN_BLANK_AS_NULL);
+			
+			FileOutputStream fileOut = new FileOutputStream(Path);
+			excelWBook = new XSSFWorkbook();
+			excelWSheet = excelWBook.createSheet(SheetName);
+			row = excelWSheet.createRow(RowNum);
+			cell = row.createCell(ColNum);
 			if (cell == null) {
 
 				cell = row.createCell(ColNum);
@@ -82,7 +86,7 @@ public class ReadExcel {
 			}
 
 			// Constant variables Test Data path and Test Data file name
-			FileOutputStream fileOut = new FileOutputStream("");
+			
 
 			excelWBook.write(fileOut);
 			fileOut.flush();

@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33540" started-at="2017-06-14T20:30:23Z" finished-at="2017-06-14T20:30:57Z">
+  <suite name="Default suite" duration-ms="11767" started-at="2017-09-14T22:20:35Z" finished-at="2017-09-14T22:20:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33540" started-at="2017-06-14T20:30:23Z" finished-at="2017-06-14T20:30:57Z">
-      <class name="com.accenture.tests.RegisterUserTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.accenture.tests.RegisterUserTest@4cdbe50f]" name="beforeTest" is-config="true" duration-ms="11987" started-at="2017-06-14T15:30:23Z" finished-at="2017-06-14T15:30:35Z">
+    <test name="Default test" duration-ms="11767" started-at="2017-09-14T22:20:35Z" finished-at="2017-09-14T22:20:47Z">
+      <class name="com.accenture.tests.SendMessageTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.accenture.tests.SendMessageTest@140c9f39]" name="beforeTest" is-config="true" duration-ms="7937" started-at="2017-09-14T17:20:35Z" finished-at="2017-09-14T17:20:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="registerUser()[pri:0, instance:com.accenture.tests.RegisterUserTest@4cdbe50f]" name="registerUser" duration-ms="20527" started-at="2017-06-14T15:30:35Z" finished-at="2017-06-14T15:30:56Z">
+        <test-method status="PASS" signature="sendMessage()[pri:0, instance:com.accenture.tests.SendMessageTest@140c9f39]" name="sendMessage" duration-ms="2631" started-at="2017-09-14T17:20:43Z" finished-at="2017-09-14T17:20:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registerUser -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.accenture.tests.RegisterUserTest@4cdbe50f]" name="afterTest" is-config="true" duration-ms="1015" started-at="2017-06-14T15:30:56Z" finished-at="2017-06-14T15:30:57Z">
+        </test-method> <!-- sendMessage -->
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:com.accenture.tests.SendMessageTest@140c9f39]" name="stopDriver" is-config="true" duration-ms="1179" started-at="2017-09-14T17:20:46Z" finished-at="2017-09-14T17:20:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.accenture.tests.RegisterUserTest -->
+        </test-method> <!-- stopDriver -->
+      </class> <!-- com.accenture.tests.SendMessageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
